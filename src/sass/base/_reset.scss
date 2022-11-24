@@ -1,0 +1,52 @@
+@use "../abstracts/colors" as *;
+@import "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap";
+body {
+  margin: 0;
+  padding: 0;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.light {
+  color: $very-dark-blue-light-mode;
+  background-color: $very-light-gray-light-mode;
+
+  header,
+  button,
+  li,
+  #search,
+  #filter {
+    background-color: $white;
+  }
+
+  input, input::placeholder, #filter {
+    color: $very-dark-blue-light-mode;
+  }
+}
+
+.dark {
+  color: $white;
+  background-color: $very-dark-blue-dark-mode;
+
+  header,
+  button,
+  li,
+  #search,
+  #filter {
+    background-color: $dark-blue-dark-mode;
+  }
+
+  input, input::placeholder, #filter {
+    color: $white;
+  }
+}

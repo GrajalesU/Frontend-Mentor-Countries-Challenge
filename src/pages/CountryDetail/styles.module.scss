@@ -1,0 +1,119 @@
+.page {
+  min-height: 90vh;
+
+  &Flex {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      min-height: 60vh;
+      align-items: center;
+    }
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-block: 20px;
+}
+
+.country {
+  &Flag {
+    width: 100%;
+    margin-block: 30px;
+
+    @media (min-width: 768px) {
+      width: 45%;
+      margin-right: 5%;
+    }
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+
+  &Flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+
+  &Title {
+    font-size: 18px;
+  }
+
+  &Detail {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &Element {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      h2 {
+        font-weight: 600;
+      }
+
+      & * {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &Frontier {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      height: 20px;
+    }
+
+    &Title {
+      font-size: 18px;
+      margin-bottom: 20px;
+
+      @media (min-width: 768px) {
+        width: 40%;
+      }
+    }
+
+    &List {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5%;
+
+      @media (min-width: 768px) {
+        width: 60%;
+      }
+
+      &Element {
+        width: 30%;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        @media (min-width: 768px) {
+          width: auto;
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding-inline: 10px;
+        }
+      }
+    }
+  }
+}
